@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --btn: hsl(223, 86%, 63%);
+    --input: hsl(223, 100%, 88%);
+    --states-error: hsl(354, 100%, 66%);
+    --paragraph: hsl(209, 33%, 12%);
+    --heading: hsl(0, 0%, 59%);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    color: var(--heading);
+    font-weight: 300;
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+p, 
+span {
+    color: var(--paragraph);
+}
+
+span {
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+main {
+    padding-top: 18%;
+    width: 50%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-subscribe {
+    text-align: center;
+    width: 90%;
+}
+
+.logo img {
+  margin: auto;
+  margin-bottom: 2.5rem;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.input-section span {
+    display: none;
+    text-align: start;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.5em;
+    font-style: italic;
+    color: var(--states-error);
+    opacity: 0.6;
+}
+
+.input-section input[type="email"] {
+    width: 21rem;
+    height: 2.5rem;
+    padding-left: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--input);
+    outline: none;
+}
+
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--paragraph);
+    transition: background-color 5000s ease-in-out 0s ;
+}
+
+input::placeholder {
+    color: var(--input);
+}
+
+.input-section input[type="email"] {
+    caret-color: var(--input);
+}
+
+.input-section .btn {
+    height: 2.5rem;
+    width: 9rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--btn);
+    font-size: 0.6em;
+    box-shadow: 0 7px 7px var(--input);
+    opacity: 1;
+    transition: button 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(80, 125, 243, 0.9);
+}
+
+.hero-section {
+    padding-top: 11%;
+    padding-bottom: 15%;
+    padding-inline: 14%;
+}
+
+.social-media {
+    padding-bottom: 3rem;
+}
+
+.social-media > p {
+    font-size: 0.6em;
+    color: var(--heading);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.icons a {
+    text-decoration: none;
+    color: var(--btn);
+    background-color: #fff;
+    border: 1px solid var(--input);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.icons a:hover {
+    background-color: var(--btn);
+    color: #fff;
+}
+
+@media screen and (width = 320px) {
+    main {
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (width <= 700px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.7em;
+    }
+    main {
+        width: 100%;
+    }
+
+    .container {
+        padding-top: 10rem;
+    }
+    .logo img {
+        max-width: 20%;
+    }
+
+    .input-section {
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 5%;
+    }
+
+    .input-section span {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .input-section input[type="email"] {
+     width: 18.5rem;
+    }
+
+    .input-section .btn {
+        width: 18.5rem;
+    }
+
+    .hero-section {
+        padding-top: 15%;
+        padding-inline: 8%;
+        padding-bottom: 30%;
+    }
+}
+
+@media screen and (width >= 701px ) and (width <= 1000px) { 
+   
+    .input-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-section .btn, 
+    .input-section input[type="email"] {
+        width: 16.5rem;
+        margin: auto;
+    }
+
+    .hero-section {
+        padding-inline: 0;
+        padding-bottom: 15%;
+    }
+}
+
+
+@media screen and (width >= 1440px){
+    h1 {
+        font-size: 2em;
+    }
+    main {
+        padding-top: 5%;
+    }
+
+}

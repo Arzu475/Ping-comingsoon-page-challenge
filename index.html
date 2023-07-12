@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+    <main>
+      <div class="container">
+      <section class="container-subscribe">
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+         <h1>We are launching <span>soon!</span></h1>
+          <p>Subscribe and get notified</p>
+        <form action="#" class="input-section" name="form1">
+          <div>
+          <input type="email" name="email" id="emails" placeholder="Your email address..." maxlength="40" required>
+          <span id="message-error"></span>
+          <span id="required"></span>
+        </div>
+           <button type="button" class="btn" onclick="emailValidation(document.form1.emails)">Notify Me</button> 
+        </form>
+      </section>
+
+      <section class="hero-section">
+       <div class="hero-image">
+        <img src="images/illustration-dashboard.png" alt="">
+       </div>
+      </section>
+
+      <section class="social-media">
+       <div class="icons">
+        <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook" role="img" aria-label="Facebook-icon"></ion-icon></a>
+        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter" role="img" aria-label="Twitter-icon"></ion-icon></a>
+        <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram" role="img" aria-label="Instagram icon"></ion-icon></a>
+       </div>
+        <p>&copy; Copyright Ping. All rights reserved.</p>
+         </section>
+
+ </div>
+  </main>
+
+<!-- 
+  <footer class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+
+  <script src="./js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
