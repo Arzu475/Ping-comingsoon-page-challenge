@@ -52,7 +52,7 @@ body {
 
 main {
     padding-top: 18%;
-    width: 50%;
+    width: 60%;
 }
 
 
@@ -184,7 +184,7 @@ input::placeholder {
         font-size: 1.2em;
     }
     p {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     main {
         width: 100%;
@@ -232,7 +232,7 @@ input::placeholder {
 
     .input-section .btn, 
     .input-section input[type="email"] {
-        width: 16.5rem;
+        width: 18rem;
         margin: auto;
     }
 
@@ -245,10 +245,15 @@ input::placeholder {
 
 @media screen and (width >= 1440px){
     h1 {
-        font-size: 2em;
-    }
-    main {
-        padding-top: 5%;
+        font-size: 2.5em;
     }
 
+    p {
+        font-size: 1.1em;
+    }
+    main {
+        padding-top: 10%;
+    }
+
+  
 }
