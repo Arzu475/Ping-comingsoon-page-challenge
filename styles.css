@@ -51,7 +51,7 @@ body {
 
 
 main {
-    padding-top: 18%;
+    padding-top: 20rem;
     width: 60%;
 }
 
@@ -91,10 +91,10 @@ main {
 }
 
 .input-section input[type="email"] {
-    width: 21rem;
-    height: 2.5rem;
+    width: 24rem;
+    height: 2.8rem;
     padding-left: 1.5rem;
-    border-radius: 20px;
+    border-radius: 28px;
     border: 1px solid var(--input);
     outline: none;
 }
@@ -115,9 +115,9 @@ input::placeholder {
 }
 
 .input-section .btn {
-    height: 2.5rem;
+    height: 2.8rem;
     width: 9rem;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     border: none;
     outline: none;
@@ -136,7 +136,7 @@ input::placeholder {
 
 .hero-section {
     padding-top: 11%;
-    padding-bottom: 15%;
+    padding-bottom: 14%;
     padding-inline: 14%;
 }
 
@@ -238,7 +238,7 @@ input::placeholder {
 
     .hero-section {
         padding-inline: 0;
-        padding-bottom: 15%;
+        padding-bottom: 18%;
     }
 }
 
@@ -252,7 +252,7 @@ input::placeholder {
         font-size: 1.1em;
     }
     main {
-        padding-top: 10%;
+        padding-top: 15%;
     }
 
   
